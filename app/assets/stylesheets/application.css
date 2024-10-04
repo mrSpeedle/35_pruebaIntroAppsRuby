@@ -13,3 +13,222 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    background-color: #F5F8FA; /* Fondo suave para toda la página */
+    font-family: Arial, sans-serif;
+    color: #14171A;
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+h1 {
+    color: #1DA1F2; /* Color del título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #E1E8ED;
+    height: 100vh;
+}
+
+.navbar .nav-link {
+    color: #1DA1F2;
+}
+
+.navbar .form-control {
+    background-color: #E1E8ED;
+    border-radius: 50px;
+    padding-left: 15px;
+}
+
+.btn-outline-success {
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+    color: white;
+}
+
+.btn-outline-success:hover {
+    background-color: #0D8AF0;
+}
+
+#tweets .border {
+    border-color: #E1E8ED;
+    border-radius: 10px;
+}
+
+#tweets .btn.bg-info {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.text-end button {
+    background-color: transparent;
+    border: none;
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.d-flex button {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.trending-topics {
+    background-color: #F5F8FA;
+    border: 1px solid #E1E8ED;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.trending-topics h5 {
+    color: #1DA1F2;
+    font-weight: bold;
+}
+
+.trending-topics ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #14171A;
+}
+
+.col-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#searchbar-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid #E1E8ED;
+}
+
+.form-control.me-2 {
+    border-radius: 50px;
+    padding-left: 15px;
+}
+
+.btn-primary.rounded-pill {
+    background-color: #1DA1F2;
+    border: none;
+}
+
+.navbar {
+    background-color: white !important;
+    border-right: 1px solid #E1E8ED;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.navbar .container-fluid {
+    width: 100%;
+}
+
+.navbar .navbar-brand {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E1E8ED;
+}
+
+.navbar .navbar-brand i {
+    margin-right: 8px;
+}
+
+.navbar .nav-link {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-link i {
+    font-size: 1.25rem;
+}
+
+.navbar .nav-item {
+    padding: 10px 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #E1E8ED;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Espacio interno para la tarjeta */
+    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+}
+
+.card h2 {
+    font-size: 24px; /* Aumenta el tamaño del texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.card p {
+    margin-bottom: 0; /* Asegura que no haya margen adicional en los párrafos dentro de la tarjeta */
+}
+
+.btn.bg-info {
+    background-color: #1DA1F2;
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Añade padding para hacer el botón más grande */
+    border-radius: 50px; /* Bordes redondeados en el botón */
+}
+
+.btn.bg-info:hover {
+    background-color: #0D8AF0; /* Cambia a un tono más oscuro al pasar el mouse */
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.pagination .page-item {
+    margin: 0 5px; /* Añade espacio entre los botones */
+}
+
+.pagination .page-item .page-link {
+    display: inline-block; /* Asegura que se comporten como botones */
+    background-color: #1DA1F2; /* Color de fondo del botón */
+    color: white !important; /* Asegura que el texto sea blanco */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 8px 12px; /* Tamaño del botón */
+    text-decoration: none; /* Elimina subrayado */
+    border: none; /* Sin borde adicional */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0D8AF0; /* Color del botón activo */
+    border-color: #0D8AF0;
+    color: white !important; /* Asegura que el texto del botón activo sea blanco */
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: #0B84D6; /* Color del botón al pasar el mouse */
+    color: white !important; /* Asegura que el texto sea blanco en el hover */
+    text-decoration: none; /* Elimina subrayado en hover */
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #E1E8ED; /* Color para el botón deshabilitado */
+    color: #AAB8C2; /* Texto gris para botones deshabilitados */
+    border-color: #E1E8ED;
+}
+

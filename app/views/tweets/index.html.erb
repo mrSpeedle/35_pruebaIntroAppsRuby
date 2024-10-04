@@ -2,32 +2,21 @@
 
 <% content_for :title, "Tweets" %>
 
-<!--
-Formulario de búsqueda
-<h1>Tweets</h1>
-<%= form_with url: tweets_path, method: :get, local: true do %>
-  <div>
-    <%= label_tag :query, "Buscar Tweets" %>
-    <%= text_field_tag :query, params[:query], placeholder: "Buscar por descripción o usuario" %>
-    <%= submit_tag "Buscar" %>
-  </div>
-<% end %>
--->
-
 <div id="tweets" class="px-4">
-	<% @tweets.each do |tweet| %>
-	<div id="<%= dom_id tweet %>" class="bg-light border border-primary my-3 p-3" style="box-shadow: 0 0 10px black;">
-			<%= render tweet %>
-		<p class="text-end">
-			<button class="btn bg-info">
-				<%= link_to "Show this tweet", tweet%>
-			</button>
-		</p>
-	</div>
-	<% end %>
+  <% @tweets.each do |tweet| %>
+    <div id="<%= dom_id tweet %>" class="bg-light border my-3 p-3" style="box-shadow: none;">
+      <p>
+        <strong><%= tweet.user_name %></strong>
+        <span class="text-muted"> · <%= tweet.created_at.strftime("%d %b %Y at %H:%M") %></span>
+      </p>
+      <p><%= tweet.description %></p>
+      <div class="text-end">
+        <%= link_to "Ver tweet", tweet, class: 'btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
 </div>
 
-<!-- Agregamos el paginador -->
-<div class="pagination">
-	<%= paginate @tweets %>
+<div class="pagination d-flex justify-content-center mt-4">
+  <%= paginate @tweets %>
 </div>
