@@ -1,10 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @tweet %>
+<div class="border border-primary m-3 p-3 bg-light" style="box-shadow: 0 0 10px black;">
+    <%= render @tweet %>
+</div>
 
-<div>
-  <%= link_to "Edit this tweet", edit_tweet_path(@tweet) %> |
-  <%= link_to "Back to tweets", tweets_path %>
-
-  <%= button_to "Destroy this tweet", @tweet, method: :delete %>
+<div class="d-flex justify-content-evenly">
+	<button class="btn bg-info">
+		<%= link_to "Back to tweets", tweets_path%>
+	</button>
+	<button class="btn bg-info">
+		<%= link_to "Edit this tweet", edit_tweet_path(@tweet)%>
+	</button>
+	<%= button_to "Destroy this tweet", @tweet, method: :delete, class:'btn bg-danger' %>
 </div>

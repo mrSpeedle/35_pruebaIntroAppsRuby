@@ -2,9 +2,9 @@
 
 <% content_for :title, "Tweets" %>
 
+<!--
+Formulario de búsqueda
 <h1>Tweets</h1>
-
-<!-- Formulario de búsqueda -->
 <%= form_with url: tweets_path, method: :get, local: true do %>
   <div>
     <%= label_tag :query, "Buscar Tweets" %>
@@ -12,19 +12,22 @@
     <%= submit_tag "Buscar" %>
   </div>
 <% end %>
+-->
 
-<div id="tweets">
-  <% @tweets.each do |tweet| %>
-    <%= render tweet %>
-    <p>
-      <%= link_to "Show this tweet", tweet %>
-    </p>
-  <% end %>
+<div id="tweets" class="px-4">
+	<% @tweets.each do |tweet| %>
+	<div id="<%= dom_id tweet %>" class="bg-light border border-primary my-3 p-3" style="box-shadow: 0 0 10px black;">
+			<%= render tweet %>
+		<p class="text-end">
+			<button class="btn bg-info">
+				<%= link_to "Show this tweet", tweet%>
+			</button>
+		</p>
+	</div>
+	<% end %>
 </div>
 
 <!-- Agregamos el paginador -->
 <div class="pagination">
-  <%= paginate @tweets %>
+	<%= paginate @tweets %>
 </div>
-
-<%= link_to "New tweet", new_tweet_path %>

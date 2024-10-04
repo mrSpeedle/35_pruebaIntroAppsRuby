@@ -11,22 +11,24 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div>
-    <%= form.label :user_name, style: "display: block" %>
-    <%= form.text_field :user_name %>
-  </div>
-
-  <div>
-    <%= form.label :softdelete, style: "display: block" %>
-    <%= form.check_box :softdelete %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+<div id="<%= dom_id tweet %>" class="border border-primary m-3 p-3 bg-light" style="box-shadow: 0 0 10px black;">
+	<div>
+		<%= form.label :user_name %>
+		<%= form.text_field :user_name %>
+	</div>
+	<hr>
+	<div>
+		<%= form.label :description %>
+		<%= form.text_area :description, size:"50x5", class:'w-100' %>
+	</div>
+	<hr>
+	<div>
+		<%= form.label :softdelete %>
+		<%= form.check_box :softdelete %>
+	</div>
+	<hr>
+	<div class="d-flex justify-content-center">
+		<%= form.submit %>
+	</div>
+	<% end %>
+</div>
