@@ -1,17 +1,14 @@
-<div id="<%= dom_id tweet %>">
-  <p>
-    <strong>Description:</strong>
-    <%= tweet.description %>
-  </p>
-
-  <p>
-    <strong>User name:</strong>
-    <%= tweet.user_name %>
-  </p>
-
-  <p>
-    <strong>Softdelete:</strong>
-    <%= tweet.softdelete %>
-  </p>
-
-</div>
+<p>
+	<strong>Usuario:</strong>
+	<%= tweet.user_name %>
+</p>
+<hr>
+<p class="text-center">
+	<strong>Description:</strong>
+	<%= tweet.description %>
+</p>
+<p style="visibility:hidden">
+	<strong>Softdelete:</strong>
+	<%= tweet.softdelete %>
+</p>
+<hr>

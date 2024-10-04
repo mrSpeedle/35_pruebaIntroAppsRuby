@@ -10,6 +10,21 @@ class TweetsController < ApplicationController
   def show
   end
 
+  def search
+    @tweets = Tweet.active.page(params[:page])
+=begin
+    puts "-----------------------------------------"
+    puts params[:query]
+    puts "-----------------------------------------"
+    puts params[:query].present?
+    puts "-----------------------------------------"
+=end
+    if params[:query].present?
+      @tweets = @tweets.search_full_text(params[:query])
+      render :index
+    end
+  end
+
   # GET /tweets/new
   def new
     @tweet = Tweet.new

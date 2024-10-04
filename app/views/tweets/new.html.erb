@@ -1,11 +1,13 @@
 <% content_for :title, "New tweet" %>
 
-<h1>New tweet</h1>
+<h1 class="text-center">Nuevo tweet</h1>
 
 <%= render "form", tweet: @tweet %>
 
 <br>
 
-<div>
-  <%= link_to "Back to tweets", tweets_path %>
+<div class="d-flex justify-content-center">
+	<button class="btn bg-info">
+		<%= link_to "Back to tweets", tweets_path %>
+	</button>
 </div>
