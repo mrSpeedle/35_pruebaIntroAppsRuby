@@ -83,7 +83,7 @@ class TweetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tweet_params
-      params.require(:tweet).permit(:description, :user_name, :softdelete).merge(page: params[:page])
+      params.require(:tweet).permit(:description, :user_name, :softdelete)
     end
     
 end
