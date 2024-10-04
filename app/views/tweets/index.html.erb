@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Tweets" %>
+
+<h1>Tweets</h1>
+
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+    <p>
+      <%= link_to "Show this tweet", tweet %>
+    </p>
+  <% end %>
+</div>
+
+<!-- Agregamos el paginador -->
+<div class="pagination">
+  <%= paginate @tweets %>
+</div>
+
+<%= link_to "New tweet", new_tweet_path %>
