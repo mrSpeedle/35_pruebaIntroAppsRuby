@@ -3,7 +3,7 @@ class CreateTweets < ActiveRecord::Migration[7.2]
     create_table :tweets do |t|
       t.text :description
       t.string :user_name
-      t.boolean :softdelete
+      t.boolean :softdelete, default: false
 
       t.timestamps
     end

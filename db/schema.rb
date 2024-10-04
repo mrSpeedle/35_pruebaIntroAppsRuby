@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_04_005523) do
   create_table "tweets", force: :cascade do |t|
     t.text "description"
     t.string "user_name"
-    t.boolean "softdelete"
+    t.boolean "softdelete", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
