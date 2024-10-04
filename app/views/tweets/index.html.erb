@@ -6,6 +6,7 @@
   <% @tweets.each do |tweet| %>
     <div id="<%= dom_id tweet %>" class="bg-light border my-3 p-3" style="box-shadow: none;">
       <p>
+        <img src="<%= tweet.profile_image_url %>" alt="Profile Image" class="rounded-circle me-2" style="width: 50px; height: 50px;">
         <strong><%= tweet.user_name %></strong>
         <span class="text-muted"> · <%= tweet.created_at.strftime("%d %b %Y at %H:%M") %></span>
       </p>

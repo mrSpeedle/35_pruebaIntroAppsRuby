@@ -10,8 +10,10 @@
 require 'faker'
 
 15.times do |i|
-    Tweet.create(
-      user_name:  Faker::Twitter.screen_name,
-      description: Faker::Lorem.sentence(word_count: 25)
-    )
+  Tweet.create(
+    user_name:  Faker::Twitter.screen_name,
+    description: Faker::Lorem.sentence(word_count: 25),
+    profile_image_url: Faker::Avatar.image(slug: "user-#{i}", size: "50x50", format: "png", set: "set1")
+  )
 end
+
