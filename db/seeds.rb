@@ -11,7 +11,7 @@ require 'faker'
 
 15.times do |i|
     Tweet.create(
-      description: Faker::Twitter.status,
-      username: Faker::Twitter.screen_name
+      user_name:  Faker::Twitter.screen_name,
+      description: Faker::Lorem.sentence(word_count: 25)
     )
 end
