@@ -14,16 +14,16 @@
  *= require_self
  */
 
- body {
-    background-color: #F5F8FA; /* Fondo suave para toda la página */
+body {
+    background-color: #F5F8FA;
     font-family: Arial, sans-serif;
     color: #14171A;
-    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+    padding: 20px;
 }
 
 h1 {
-    color: #1DA1F2; /* Color del título */
-    margin-bottom: 30px; /* Espacio debajo del título */
+    color: #1DA1F2;
+    margin-bottom: 30px;
 }
 
 .navbar {
@@ -170,29 +170,29 @@ h1 {
     border-radius: 15px;
     border: 1px solid #E1E8ED;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px; /* Espacio interno para la tarjeta */
-    margin-bottom: 20px; /* Espacio inferior entre tarjetas */
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .card h2 {
-    font-size: 24px; /* Aumenta el tamaño del texto del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .card p {
-    margin-bottom: 0; /* Asegura que no haya margen adicional en los párrafos dentro de la tarjeta */
+    margin-bottom: 0;
 }
 
 .btn.bg-info {
     background-color: #1DA1F2;
     border: none;
     color: white;
-    padding: 10px 20px; /* Añade padding para hacer el botón más grande */
-    border-radius: 50px; /* Bordes redondeados en el botón */
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 .btn.bg-info:hover {
-    background-color: #0D8AF0; /* Cambia a un tono más oscuro al pasar el mouse */
+    background-color: #0D8AF0;
 }
 
 .text-center {
@@ -200,35 +200,37 @@ h1 {
 }
 
 
+
 .pagination .page-item {
-    margin: 0 5px; /* Añade espacio entre los botones */
+    margin: 0 5px;
 }
 
 .pagination .page-item .page-link {
-    display: inline-block; /* Asegura que se comporten como botones */
-    background-color: #1DA1F2; /* Color de fondo del botón */
-    color: white !important; /* Asegura que el texto sea blanco */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 8px 12px; /* Tamaño del botón */
-    text-decoration: none; /* Elimina subrayado */
-    border: none; /* Sin borde adicional */
+    display: inline-block;
+    background-color: #1DA1F2;
+    color: white !important;
+    border-radius: 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    border: none;
 }
 
 .pagination .page-item.active .page-link {
-    background-color: #0D8AF0; /* Color del botón activo */
+    background-color: #0D8AF0;
     border-color: #0D8AF0;
-    color: white !important; /* Asegura que el texto del botón activo sea blanco */
+    color: white !important;
 }
 
 .pagination .page-item .page-link:hover {
-    background-color: #0B84D6; /* Color del botón al pasar el mouse */
-    color: white !important; /* Asegura que el texto sea blanco en el hover */
-    text-decoration: none; /* Elimina subrayado en hover */
+    background-color: #0B84D6;
+    color: white !important;
+    text-decoration: none;
 }
 
 .pagination .page-item.disabled .page-link {
-    background-color: #E1E8ED; /* Color para el botón deshabilitado */
-    color: #AAB8C2; /* Texto gris para botones deshabilitados */
+    background-color: #E1E8ED;
+    color: #AAB8C2;
     border-color: #E1E8ED;
 }
+
 

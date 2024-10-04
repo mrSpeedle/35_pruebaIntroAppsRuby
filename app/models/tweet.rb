@@ -14,7 +14,7 @@ class Tweet < ApplicationRecord
 
   scope :active, -> { where(softdelete: false) }
 
-  # Validaciones para asegurarse de que los campos no estén vacíos
+
   validates :user_name, presence: true
   validates :description, presence: true
 
