@@ -4,6 +4,15 @@
 
 <h1>Tweets</h1>
 
+<!-- Formulario de búsqueda -->
+<%= form_with url: tweets_path, method: :get, local: true do %>
+  <div>
+    <%= label_tag :query, "Buscar Tweets" %>
+    <%= text_field_tag :query, params[:query], placeholder: "Buscar por descripción o usuario" %>
+    <%= submit_tag "Buscar" %>
+  </div>
+<% end %>
+
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
