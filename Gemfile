@@ -58,6 +58,6 @@ end
 
 gem "pg_search", "~> 2.3"
 
-gem "faker", "~> 3.4"
+gem "faker", "~> 3.5"
 
 gem "kaminari", "~> 1.2"
